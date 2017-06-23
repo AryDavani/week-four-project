@@ -1,36 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>SoundCloud Music Search</title>
-  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="css/styles.css"  media="screen,projection"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
-<body>
-  <div class="container">
+
+<body class="container">
+
+  <div class="img-header">
+
     <div class="imgs">
-      <img src="soundcloud-white.png" alt="">
-      <img src="soundcloud-white.png" alt="">
-      <img src="soundcloud-white.png" alt="">
-      <img src="soundcloud-white.png" alt="">
+      <img class="imgnav" src="images/soundcloud-white.png" alt="">
+      <img class="imgnav" src="images/soundcloud-white.png" alt="">
     </div>
+
     <section class="player">
-      <audio class="music-player" controls="controls" src=""></audio>
+      <audio id="audio" class="music-player" controls="controls" src=""></audio>
     </section>
+
     <section class="search">
       <form class="search-form">
-        <input class="searchbar" type="text" name="search" value="" placeholder="search for artist">
-        <button class="button" type="button" name="search">search</button>
+        <input id="search-words" class="searchbar" type="text" name="search" value="" placeholder="search for artist">
+        <input id="search-btn" class="btn" type="submit" name="" value="search">
       </form>
     </section>
-    <section class="results">
-      <h1>Search results:</h1>
-      <div class="each-result">
-        <img src="" alt="">
-        <h5></h5>
-        <h3></h3>
-      </div>
 
-    </section>
+    <div class="search-results">
+      <h3>Search results</h3>
+    </div>
+
+    <ul class="ul-results" id="results">
+    </ul>
+
   </div>
-  <script src="main.js"></script>
+  
+  <script src="js/main.js"></script>
 </body>
 </html>
