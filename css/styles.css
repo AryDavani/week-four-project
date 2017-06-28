@@ -35,7 +35,7 @@ p {
 /* DOM created elements */
 
 .list-results {
-  width: 210px;
+  width: 211px;
   margin: 20px;
   display: flex;
   flex-direction: column;
@@ -46,6 +46,9 @@ p {
 .image-results {
   width: 100%;
   border-radius: 10px;
+}
+.image-results:hover {
+  cursor: pointer;
 }
 
 .ul-results {
